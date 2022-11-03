@@ -2,32 +2,37 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Color Fonts</title>
-    <link href="http://fonts.cdnfonts.com/css/gilbert" rel="stylesheet">
 
-    <style>
-        /*@import url('http://fonts.cdnfonts.com/css/gilbert');*/
+    <!--favicon.ico 오류 방지용-->
+    <link rel="icon" href="data:;base64,iVBORw0KGgo=">
 
-        body {
-            font-size: 80px;
-        }
+    <!--반응형 웹페이지용-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no"/>
+    <link rel="stylesheet" type="text/css" href="./index.css">
 
-        @font-face {
-            font-family: 'PiCell';
-            src: url('./fonts/Pi-Cell.otf');
-        }
-        @font-face {
-            font-family: 'Gilbert';
-            src: url('./fonts/GilbertColorBoldPreview5.otf');
-        }
+    <!--jQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
-    </style>
+    <title>Home Page</title>
 
 </head>
-<body>
-    <div style="font-family: 'PiCell'">This is a test going on.</div>
-    <div style="font-family: 'Gilbert'">This is a test going on.</div>
+<body onload="show_box()">
+    <!--  home  -->
+    <div id="pattern-body">
+<!--        <div class="pattern-container">-->
+<!--            <div class="pattern"></div>-->
+<!--        </div>-->
+    </div>
+
+    <div id="home-graphic">
+        <div id="home-text">Press Any Key to Start</div>
+    </div>
+
+    <div id="cc">
+        ⓒ 2022. TEAM COYK All rights reserved.
+    </div>
+
+    <!-- Scripts -->
+    <script type="text/javascript" src="./index.js"></script>
 </body>
 </html>
