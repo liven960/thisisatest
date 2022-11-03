@@ -20,9 +20,9 @@ function show_box() {
     let class_color = "pattern_red";
     for (i = 0; i < container_num; i++){
         for (let j = 0; j < box_num; j++){
-            if ((string_num+i) * 2 % 3 == 0){
+            if ((j+i) % 3 == 0){
                 class_color = "pattern_red";
-            } else if ((string_num+i) * 2 % 3 == 1){
+            } else if ((j+i) % 3 == 1){
                 class_color = "pattern_green";
             } else {
                 class_color = "pattern_blue";
