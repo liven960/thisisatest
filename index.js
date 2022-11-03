@@ -20,14 +20,13 @@ function show_box() {
     let class_color = "pattern_red";
     for (i = 0; i < container_num; i++){
         for (let j = 0; j < box_num; j++){
-            if (string_num % 3 == 0){
+            if ((string_num+i) * 2 % 3 == 0){
                 class_color = "pattern_red";
-            } else if (string_num % 3 == 1){
+            } else if ((string_num+i) * 2 % 3 == 1){
                 class_color = "pattern_green";
             } else {
                 class_color = "pattern_blue";
             }
-
             if (j < 10){
                 $(`#container${i}`).append(`<div class="pattern ${class_color}" id="pattern_${i}_00${j}">${background_letter[string_num]}</div>`);
             } else if (10 <= j && j <= 99){
